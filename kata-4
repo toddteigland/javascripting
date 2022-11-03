@@ -1,0 +1,22 @@
+
+
+const instructorWithLongestName = function(people) {
+  let listOfNames = people[0].name;
+  for (let i = 0; i < people.length; i ++) {
+    if (people[i].name.length > listOfNames.length) {
+      listOfNames = people[i];
+    }
+  }
+  return listOfNames;
+};
+
+
+
+
+console.log(instructorWithLongestName([
+  {name: "Samuel", course: "iOS"},
+  {name: "Jeremiah", course: "Web"},
+  {name: "Ophilia", course: "Web"},
+  {name: "Donald", course: "Web"}
+]));
+
