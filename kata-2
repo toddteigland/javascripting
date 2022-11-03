@@ -1,0 +1,37 @@
+let evens = [];
+let odds = [];
+let sum = 0;
+
+function conditionalSum (array,condition) {
+  if (condition === "even") {
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] % 2 === 0) {
+        evens.push(array[i]);
+      } 
+    } 
+    for (let j = 0; j < evens.length; j++) {
+      sum += evens[j];
+    }
+    return sum;
+  } else if (condition === "odd") {
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] % 2 > 0) {
+        odds.push(array[i]);
+      }
+    } 
+    for (let j = 0; j < odds.length; j++) {
+      sum += odds[j];
+    }
+    return sum;
+  } else {
+    return 0;
+  }
+}
+
+
+
+console.log(conditionalSum([13, 88, 12, 44, 99], "even"));
+
+
+
+
