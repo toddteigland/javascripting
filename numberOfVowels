@@ -1,0 +1,12 @@
+vowels = [];
+
+function numberOfVowels (string) {
+  for (vowel of string) {
+    if (vowel === 'a' || vowel === 'e' || vowel === 'i' || vowel === 'o' || vowel ==='u') {
+      vowels.push(vowel)
+    }
+  }
+  return vowels.length;
+}
+
+console.log(numberOfVowels("lighthouse labs"));
