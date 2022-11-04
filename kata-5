@@ -1,0 +1,10 @@
+const urlEncode = function(text) {
+  let mySpace = " ";
+  let replaceWith = '%20';
+  text = text.split(mySpace).join(replaceWith);  
+  return text;
+};
+
+console.log(urlEncode("Lighthouse Labs"));
+console.log(urlEncode(" Lighthouse Labs "));
+console.log(urlEncode("blue is greener than purple for sure"));
