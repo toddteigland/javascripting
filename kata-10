@@ -16,6 +16,7 @@ const multiplicationTable = function(maxValue) {
   }
   return  finaltotal;
 };   
+ 
 
 console.log(multiplicationTable(1));
 console.log(multiplicationTable(5));
